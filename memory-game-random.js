@@ -99,7 +99,7 @@ function checkForMatch() {
       if (lowestMoves === 0 || lowestMoves === null || move < lowestMoves) {
         result.classList.remove("hidden");
         result.innerHTML =
-          "<p> Congratulations! <br> You've just set the record! </p>";
+          "<p> Congratulations! <br> You've set the record! </p>";
         localStorage.setItem("lowestMoves", move);
         lowestMoves = move;
         const lowestMoveScoreBoard =
