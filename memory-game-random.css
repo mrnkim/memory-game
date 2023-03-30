@@ -6,7 +6,7 @@
 }
 
 body {
-margin-top: 15%;
+margin-top: 10%;
 display: relative;
 }
 
@@ -63,18 +63,21 @@ transform: rotateY(180deg);
 }
 
 button {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 1.2em;
   padding: 1.5em 1em;
-  border-radius: 5%;
-  border: 0.5px solid gray;
+  border-radius: 1em;
+  border: 0.5px solid black;
 color: white;
   background-color: black;
 }
 
-button img {
-  width: 50px;
-  height: 50px;
+button:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  cursor: pointer;
+
 }
 
 span {
@@ -134,8 +137,8 @@ span {
       margin-top: 0;
       font-size: 1em;
       padding: 1em 1em;
-      border-radius: 5%;
-      border: 0.5px solid gray;
+      border-radius: 1em;
+      border: 0.5px solid black;
     color: white;
       background-color: black;
     }
