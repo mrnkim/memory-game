@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Memory Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./memory-game-random.css"/>
+</head>
+<body>
+
+<h1>Memory Game</h1>
+
+<div class="stats">
+  <div>Moves<span id="moves"> </span></div>
+  <div>Score<span id="score"> </span></div>
+  <div>Best Moves<span id="lowest-move-score"> </span></div>
+</div>
+
+<div class="wrapper">
+<div id="game">
+
+</div>
+</div>
+
+<div id="result"></div>
+
+<div class="wrapper">
+<button id="start">Start!</button>
+</div>
+
+<div class="wrapper">
+<button id="reStart" class="hidden">Replay</button>
+</div>
+
+<script src="memory-game-random.js"></script>
+
+
+</body>
+</html>

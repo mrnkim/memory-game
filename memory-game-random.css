@@ -1,0 +1,142 @@
+/* you can add to or change this. */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+margin-top: 15%;
+display: relative;
+}
+
+h1 {
+margin: 1em;
+text-align: center;
+}
+
+.stats{
+  margin: 0.75em 10%;
+  line-height: 1.5;
+  padding: 3%;
+}
+
+.wrapper {
+ display: flex;
+ justify-content: center;
+ padding: 0;
+}
+
+#game {
+  perspective: 1000px;
+  flex: 0 0 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+#game div{
+  border: solid 3px;
+  width: 15em;
+  height: 17em;
+  margin: 10px;
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: transform .25s, background-color .25s;
+  border-radius: 5%;
+}
+
+.back-face {
+  background-image: url(./dotted.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flipped {
+transform: rotateY(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 1em;
+  font-size: 1.2em;
+  padding: 1.5em 1em;
+  border-radius: 5%;
+  border: 0.5px solid gray;
+color: white;
+  background-color: black;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+}
+
+span {
+  margin-left: 1em;
+}
+
+#result {
+  position: absolute;
+  padding: 2em;
+  min-width: 100%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  transition: background-color 1s ease-in;
+}
+
+@media(min-width: 1000px) {
+  body {
+    margin-top: 1%;
+    display: relative;
+    }
+
+
+    #game {
+      perspective: 1000px;
+      flex: 0 0 600px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0.5em;
+      padding: 0;
+    }
+
+     #game div{
+       border: solid 3px;
+       width: 8em;
+       height: 10em;
+       margin: 8px;
+       display: inline-block;
+       transform-style: preserve-3d;
+       transition: transform .25s, background-color .25s;
+       border-radius: 5%;
+     }
+
+     .stats{
+      margin: 0em 30%;
+      font-size: 0.8em;
+      line-height: 1.2;
+      padding: 1%;
+    }
+
+    button {
+      margin-top: 0;
+      font-size: 1em;
+      padding: 1em 1em;
+      border-radius: 5%;
+      border: 0.5px solid gray;
+    color: white;
+      background-color: black;
+    }
+ }
